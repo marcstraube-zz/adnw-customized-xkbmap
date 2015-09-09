@@ -838,3 +838,22 @@ xkb_symbols "adnw" {
     include "level5(lsgt_switch)"
     include "level5(ralt_switch)"
 };
+
+partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "adnwcode" {
+    include "de(adnw_base)"
+
+    name[Group1]= "AdNW Code";    
+
+    key <AB10> { [ j,                       J,                       NoSymbol,                Greek_theta,             NoSymbol,                NoSymbol,                Greek_THETA,             NoSymbol                 ] };
+    key <AC11> { [ f,                       F,                       NoSymbol,                Greek_phi,               NoSymbol,                NoSymbol,                Greek_PHI,               NoSymbol                 ] };
+    key <AD11> { [ ssharp,                  U1E9E,                   NoSymbol,                Greek_finalsmallsigma,   NoSymbol,                NoSymbol,                jot,                     NoSymbol                 ] };
+    key <AD10> { [ z,                       Z,                       NoSymbol,                Greek_zeta,              NoSymbol,                NoSymbol,                U2124,                   NoSymbol                 ] };
+
+    include "shift(both_capslock)"
+    include "level3(caps_switch)"
+    include "level3(bksl_switch)"
+    include "level5(lsgt_switch)"
+    include "level5(ralt_switch)"
+};
+
